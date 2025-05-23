@@ -53,9 +53,9 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h2 class="title is-2 publication-title">
+            <h3 class="title is-2 publication-title">
   Evaluating LLM-based Approaches to Legal Citation Prediction:<br>
-  Domain-specific Pre-training, Fine-tuning, or RAG?</h2>
+  Domain-specific Pre-training, Fine-tuning, or RAG?</h3>
 <h3 class="subtitle is-4">A Benchmark and Australian Law Case Study</h3>
             <br>
             <div class="is-size-5 publication-authors">
@@ -145,7 +145,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Large Language Models (LLMs) have demonstrated strong potential across legal tasks, yet the problem of legal citation prediction remains under-explored. At its core, this task demands fine-grained contextual understanding and precise identification of relevant legislation or precedent. We introduce the AusLaw Citation Benchmark, a real-world dataset comprising $55k$ Australian legal instances and 18,677 unique citations which to the best of our knowledge is the first of its scale and scope. We then conduct a systematic benchmarking across a range of solutions: (i) standard prompting of both general and law-specialised LLMs, (ii) retrieval-only pipelines with both generic and domain-specific embeddings, (iii) supervised fine-tuning, and (iv) several hybrid strategies that combine LLMs with retrieval augmentation through query expansion, voting ensembles, or re-ranking. Results show that neither general nor law-specific LLMs suffice as stand-alone solutions, with performance near zero. Instruction tuning (of even a generic open-source LLM) on task-specific dataset is among the best performing solutions. We highlight that database granularity along with the type of embeddings play a critical role in retrieval-based approaches, with hybrid methods which utilise a trained re-ranker delivering the best results. 
+            Large Language Models (LLMs) have demonstrated strong potential across legal tasks, yet the problem of legal citation prediction remains under-explored. At its core, this task demands fine-grained contextual understanding and precise identification of relevant legislation or precedent. We introduce the AusLaw Citation Benchmark, a real-world dataset comprising 55k Australian legal instances and 18,677 unique citations which to the best of our knowledge is the first of its scale and scope. We then conduct a systematic benchmarking across a range of solutions: (i) standard prompting of both general and law-specialised LLMs, (ii) retrieval-only pipelines with both generic and domain-specific embeddings, (iii) supervised fine-tuning, and (iv) several hybrid strategies that combine LLMs with retrieval augmentation through query expansion, voting ensembles, or re-ranking. Results show that neither general nor law-specific LLMs suffice as stand-alone solutions, with performance near zero. Instruction tuning (of even a generic open-source LLM) on task-specific dataset is among the best performing solutions. We highlight that database granularity along with the type of embeddings play a critical role in retrieval-based approaches, with hybrid methods which utilise a trained re-ranker delivering the best results. 
 Despite this, a performance gap of nearly 50% remains, underscoring the value of this challenging benchmark as a rigorous test-bed for future research in legal-domain.
           </p>
       </div>
@@ -159,11 +159,11 @@ Despite this, a performance gap of nearly 50% remains, underscoring the value of
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
-      <pre><code>@misc{shareghi2024auslawcite,
-        title={Methods for Legal Citation Prediction in the Age of LLMs: An Australian Law Case Study}, 
-        author={Ehsan Shareghi, Jiuzhou Han, Paul Burgess},
-        year={2024},
-        eprint={arXiv:2412.06272},
+      <pre><code>@misc{auslawcitebenchmark,
+        title={Evaluating LLM-based Approaches to Legal Citation Prediction: Domain-specific Pre-training, Fine-tuning, or RAG? A Benchmark and an Australian Law Case Study}, 
+        author={Jiuzhou Han, Paul Burgess, Ehsan Shareghi},
+        year={2025},
+        eprint={arXiv:2412.06272v2},
         archivePrefix={arXiv},
         primaryClass={cs.CL}
   }</code></pre>
