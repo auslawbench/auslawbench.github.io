@@ -53,17 +53,19 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h2 class="title is-2 publication-title">Legal Citation Prediction in the Age of LLMs:<br>
+            <h2 class="title is-2 publication-title">Evaluating LLM-based Approaches to Legal Citation Prediction:<br>
+Domain-specific Pre-training, Fine-tuning, or RAG?<br>
+A Benchmark and an Australian Law Case Study<br>
               An Australian Law Case Study</h2>
             <br>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="https://eehsan.github.io" target="_blank">Ehsan Shareghi</a><sup>1</sup></span>&nbsp;
-                <span class="author-block">
                 <a href="https://jiuzhouh.github.io" target="_blank">Jiuzhou Han</a><sup>1</sup></span>&nbsp;
                 <span class="author-block">
-                <a href="https://research.monash.edu/en/persons/paul-burgess" target="_blank">Paul Burgess</a><sup>2</sup></span>
+                <a href="https://research.monash.edu/en/persons/paul-burgess" target="_blank">Paul Burgess</a><sup>1</sup></span>&nbsp;
+                <span class="author-block">
+                <a href="https://eehsan.github.io" target="_blank">Ehsan Shareghi</a><sup>2</sup></span>
                 </span>
             </div>
 
@@ -143,23 +145,8 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            In recent years, Large Language Models (LLMs) have shown great potential across a wide range of legal tasks. Despite these advances, mitigating
-hallucination remains a significant challenge, with state-of-the-art LLMs
-still frequently generating incorrect legal references. In this paper, we focus
-on the problem of legal citation prediction within the Australian law context,
-where correctly identifying and citing relevant legislations or precedents
-is critical. We compare several approaches: prompting general purpose
-and law-specialised LLMs, retrieval-only pipelines with both generic and
-domain-specific embeddings, task-specific instruction-tuning of LLMs, and
-hybrid strategies that combine LLMs with retrieval augmentation, query
-expansion, or voting ensembles. Our findings indicate that domain-specific
-pre-training alone is insufficient for achieving satisfactory citation accuracy even after law-specialised pre-training. In contrast, instruction tuning
-on our task-specific dataset dramatically boosts performance reaching the
-best results across all settings. We also highlight that database granularity
-along with the type of embeddings play a critical role in the performance
-of retrieval systems. Among retrieval-based approaches, hybrid methods
-consistently outperform retrieval-only setups, and among these, ensemble voting delivers the best result by combining the predictive quality of
-instruction-tuned LLMs with the retrieval system.
+            Large Language Models (LLMs) have demonstrated strong potential across legal tasks, yet the problem of legal citation prediction remains under-explored. At its core, this task demands fine-grained contextual understanding and precise identification of relevant legislation or precedent. We introduce the AusLaw Citation Benchmark, a real-world dataset comprising $55k$ Australian legal instances and 18,677 unique citations which to the best of our knowledge is the first of its scale and scope. We then conduct a systematic benchmarking across a range of solutions: (i) standard prompting of both general and law-specialised LLMs, (ii) retrieval-only pipelines with both generic and domain-specific embeddings, (iii) supervised fine-tuning, and (iv) several hybrid strategies that combine LLMs with retrieval augmentation through query expansion, voting ensembles, or re-ranking. Results show that neither general nor law-specific LLMs suffice as stand-alone solutions, with performance near zero. Instruction tuning (of even a generic open-source LLM) on task-specific dataset is among the best performing solutions. We highlight that database granularity along with the type of embeddings play a critical role in retrieval-based approaches, with hybrid methods which utilise a trained re-ranker delivering the best results. 
+Despite this, a performance gap of nearly 50% remains, underscoring the value of this challenging benchmark as a rigorous test-bed for future research in legal-domain.
           </p>
       </div>
     </div>
