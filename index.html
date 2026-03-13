@@ -55,8 +55,7 @@
           <div class="column has-text-centered">
 <h3 class="title is-3 publication-title">
   Legal Citation Prediction with LLMs: <br>
-  A Comparative Evaluation of Instruction Tuning, Retrieval, and Jurisdiction-Specific Pre-training<br>
-  on the AusLaw Citation Benchmark
+  Evaluation of Instruction Tuning, Retrieval, and Jurisdiction-Specific Pre-training on the AusLaw Citation Benchmark
 </h3>
             <br>
             <div class="is-size-5 publication-authors">
@@ -146,8 +145,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Large Language Models (LLMs) have demonstrated strong potential across legal tasks, yet the problem of legal citation prediction remains under-explored. At its core, this task demands fine-grained contextual understanding and precise identification of relevant legislation or precedent. We introduce the AusLaw Citation Benchmark, a real-world dataset comprising 55k Australian legal instances and 18,677 unique citations which to the best of our knowledge is the first of its scale and scope. We then conduct a systematic benchmarking across a range of solutions: (i) standard prompting of both general and law-specialised LLMs, (ii) retrieval-only pipelines with both generic and domain-specific embeddings, (iii) supervised fine-tuning, and (iv) several hybrid strategies that combine LLMs with retrieval augmentation through query expansion, voting ensembles, or re-ranking. Results show that neither general nor law-specific LLMs suffice as stand-alone solutions, with performance near zero. Instruction tuning (of even a generic open-source LLM) on task-specific dataset is among the best performing solutions. We highlight that database granularity along with the type of embeddings play a critical role in retrieval-based approaches, with hybrid methods which utilise a trained re-ranker delivering the best results. 
-Despite this, a performance gap of nearly 50% remains, underscoring the value of this challenging benchmark as a rigorous test-bed for future research in legal-domain.
+As artificial intelligence transforms legal practice, deploying Large Language Models effectively has become critical. While LLMs show promise across legal tasks, challenges around factual accuracy and domain-specific reasoning persist, particularly for citation prediction—where authoritative references carry binding legal force. We introduce the AusLaw Citation Benchmark, comprising 55k real-world Australian instances and 18,677 unique citations—the largest jurisdiction-specific dataset for this task.  We systematically compare prompting, retrieval, fine-tuning, and hybrid strategies, including instruction-tuned models, sparse and dense retrieval, and re-ranker ensembles. Our findings reveal that  stand-alone generative models—whether general or law-specific—fail almost entirely, underscoring the risks of unaugmented deployment. Task-specific instruction tuning dramatically improves performance, BM25 outperforms dense embeddings in retrieval, and jurisdiction-specific pre-training surpasses larger but less targeted models. Hybrid approaches with trained re-rankers achieve the best results, yet a substantial ~40\% performance gap remains, exposing the persistent long-tail challenge in citation prediction. These results reframe assumptions about scale, retrieval, and fine-tuning, and establish a foundation for building reliable, jurisdiction-aware legal AI systems.
           </p>
       </div>
     </div>
